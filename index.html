@@ -4,12 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Залхуу фитнес</title>
+  <title>Залхуу фитнес
+  </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="nav.css" rel="stylesheet">
+
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="gantil.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -31,6 +35,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <!-- =======================================================
   * Template Name: Selecao
@@ -43,32 +49,52 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top" ; style="width: 100%;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+
+      <a href="#hero" class="">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h5 class="sitename">Залхуу фитнес</h5>
+        <div style="display: flex;"> <img src="gantil.png" alt="hehe"
+            style="height:60px; margin-top: 0; padding-bottom: 10px; padding-right: 10px;">
+          <h5 class="sitename" style="padding-right: 100px;">Залхуу<br> Фитнес</h5>
+        </div>
+
       </a>
 
       <nav id="navmenu" class="navmenu">
+
         <ul>
-          <li><a href="index.html" class="active">Нүүр</a></li>
+          <li><a href="#hero" class="active">Нүүр</a></li>
           <li><a href="#about">Танилцуулга</a></li>
           <li><a href="#services">Фитнес</a></li>
-          <li class="dropdown"><a href="news.html"><span>Мэдээлэл</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Эрүүл мэнд</a></li>
-              <li><a href="#">Сэтгэл зүй</a></li>
-              <li><a href="#">Иог, бясалгал</a></li>
-              <li><a href="#">Эрүүл хооллолт</a></li>
-            </ul>
-          </li>
+
           <li><a href="#portfolio">Мерч</a></li>
           <li><a href="#faq">Түгээмэл асуултууд</a></li>
 
+          <li class="dropdown"><a href="#news"><span>Мэдээлэл</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#news"><span>Санал болгох...</span></a>
+                <ul>
+                  <li><a href="#blog">Нийтлэлүүд</a></li>
+                  <li><a href="#youtube">Сувгууд</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#news"><span>Нийтлэл</span></a>
+                <ul>
+                  <li><a href="https://www.buro247.mn/individual/health">Эрүүл мэнд</a></li>
+                  <li><a href="https://www.buro247.mn/individual/self-improvement">Хувь хүний хөгжил</a></li>
+                  <li><a href="https://www.buro247.mn/beauty/expert">Гоо сайхан</a></li>
+                  <li><a href="https://www.buro247.mn/individual/relationship">Харилцаа</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li><a href="#contact">Холбоо барих</a></li>
+          <button style="color: #65558F;"><i class="fa fa-calculator" onclick="openNav()"></i></button>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -77,6 +103,9 @@
   </header>
 
   <main class="main">
+
+
+
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -88,14 +117,27 @@
         <div class="carousel-item active">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Тавтай морил!</h2>
-            <p class="animate__animated animate__fadeInUp">Залхуу фитнесс вебсайт нь суунгаа ажил хийдэг, дасгал хийхэд
-              цаг зарцуулж чаддагүй, мөн хүнд дасгалд тийм ч дуртай биш Gen z үеээс эхлүүлээд ямар ч насны хүмүүст
-              хялбараар хэдхэн хормын дотор бүх биеээ хөдөлгөх аргыг хуваалцах вебсайт юм. </p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Нэвтрэх</a>
+            <p class="animate__animated animate__fadeInUp">Залхуу фитнес вэбсайт нь суунгаа ажил хийдэг, дасгал хийхэд
+              цаг зарцуулж чаддаггүй, мөн хүнд дасгалд тийм ч дуртай биш Gen z үеэс эхлүүлээд ямар ч насны хүмүүст
+              хялбараар хэдхэн хормын дотор бүх биеэ хөдөлгөх аргыг хуваалцах вэбсайт юм. </p>
+            <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Эхэлье </a>
             <img src="cloud2.png" style=" border: none; position: absolute;
             top: 320px;
             right:800px; 
             size:10px;">
+
+            <div><iframe src="buh dasgal/zagas1.gif" width="900px" height="900px" style="position: absolute; 
+               top: 350px;
+               left: 600px; z-index: 10;" frameBorder="0" allowFullScreen></iframe>
+            </div>
+            <div style="width:10%; height:0;"><iframe src="buh dasgal/zagas2.gif" width="30%" height="30%" style="position: absolute; 
+               top: 200px;
+               right: 750px; z-index: 10;" frameBorder="0" allowFullScreen></iframe>
+            </div>
+            <div style="width:10%; height:0;"><iframe src="buh dasgal/zagas3.gif" width="90%" height="90%" style="position: absolute; 
+               top: 30px;
+               left: 880px; z-index: 10;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
             <img src="cloud.png" style=" border: none; position: absolute;
                         top: 20px;
                         left: 900px; 
@@ -115,11 +157,11 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Фитнес</h2>
-            <p class="animate__animated animate__fadeInUp">Манай зорилго бол фитнессийг залхуу хүмүүст хүртээмжтэй,
+            <p class="animate__animated animate__fadeInUp">Манай зорилго бол фитнесийг залхуу хүмүүст хүртээмжтэй,
               энгийн, зугаатай болгох явдал юм. Бид эрүүл амьдралын хэв маягт шилжихийг хүсдэг ч цаг зав багатай, эсвэл
               хүнд дасгалын хөтөлбөрөөс зугтах хүсэлтэй хүмүүст зориулсан хялбар, ойлгомжтой аргуудыг санал болгодог.
             </p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Нэвтрэх</a>
+            <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Туршиж үзье!</a>
             <img src="cloud2.png" style=" border: none; position: absolute;
             top: 20px;
             right:800px; 
@@ -145,22 +187,22 @@
             <h2 class="animate__animated animate__fadeInDown">Мерч</h2>
             <p class="animate__animated animate__fadeInUp">Бидний мерч нь таны өдөр тутмын амьдралыг сайжруулах, таны
               стиль, эрүүл мэндийн зорилгод нийцсэн бүтээгдэхүүнүүдийг санал болгодог.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Танилцах</a>
+            <a href="#portfolio" class="btn-get-started animate__animated animate__fadeInUp scrollto">Танилцъя!</a>
             <img src="cloud2.png" style=" border: none; position: absolute;
-                        top: 300px;
-                        left: 20px; 
+                        top: 250px;
+                        right: 750px; 
                         size: 2px;">
             <img src="cloud.png" style=" border: none; position: absolute;
-                        top: 200px;
-                        left: 900px; 
+                        top: 50px;
+                        left: 690px; 
                         size:10px;">
             <img src="cloud3.png" style=" border: none; position: absolute;
                         top: 100px;
-                        left: 20px; 
+                        left: 100px; 
                         size:10px;">
             <img src="cloud5.png" style=" border: none; position: absolute;
-                        top: 30px;
-                        right: 400px; 
+                        top: 300px;
+                        right: 50px; 
                         size: 10px;">
           </div>
         </div>
@@ -208,7 +250,7 @@
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Фитнессийн ертөнцийг залхуу хүмүүст хүртээмжтэй, хялбар, хөгжилтэй болгох зорилготой баг. 
+              Фитнесийн ертөнцийг залхуу хүмүүст хүртээмжтэй, хялбар, хөгжилтэй болгох зорилготой баг.
 
               Манай үнэт зүйлс:
             </p>
@@ -227,7 +269,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <p>Манай эрхэм зорилго бол залхуу хүмүүст эрүүл, идэвхтэй амьдрах урам зориг, арга замыг санал болгох явдал
               юм. Бидний энгийн, хялбар дасгалын хөтөлбөрүүд таны өдөр тутмын амьдралд амархан нийцэх болно.</p>
-            <a href="#" class="read-more"><span>Нэвтрэх</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#services" class="read-more"><span>Эхэлье!</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>
@@ -237,48 +279,31 @@
     </section><!-- /About Section -->
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background" ;
-      style="background-color: rgba(42, 44, 57, 0.9)">
-
-
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Онлайн Фитнес</h3>
-            <p>Залхуу фитнесийн орон зай нь өдөр тутамдаа өөрчлөлт хийхийг хүссэн хүн бүхэнд нээлттэй онлайнаар гэр,
-              оффис, чөлөөт орон зайд хаана ч хэзээ ч дасгал хийх боломжийг олгож байгаа юм. </p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Туршиж үзэх!</a>
-          </div>
-        </div>
-
-      </div>
-
+    <section id="call-to-action" class="call-to-action section">
       <!-- ФИТНЕС Section -->
       <section id="services" class="services section" ; style="background-color: rgba(42, 44, 57, 0.9);">
 
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up"; style="background-color:rgba(42, 44, 57, 0.9);">
-          <h2>Фитнес</h2>
-          <p>Хаана залхуурмаар байна?</p>
+        <div class="container section-title" data-aos="fade-up" ;>
+          <h2 style="color: white;">Фитнес</h2>
+          <p style="color: white;">Хаана залхуурмаар байна?</p>
         </div><!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              
+
               <div class="service-item  position-relative" ; style="background-color: rgba(255, 255, 255, 0.9);">
-                
+
                 <div>
                   <a href=""><img src="or.png" alt="saandal deer" height="260px" style="padding-left: 0;"></a>
                   <div>
                     <a href="or.html" class="stretched-link">
                       <h3 style="color: rgba(42, 44, 57, 0.9);">Орон дээрээ</h3>
                     </a>
-                    <p style="color: rgba(42, 44, 57, 0.9);">Энэ хэсэгт орон дээрээ хийж болох буюу хэвтээ дасгалууд заавар болон шатаах ккал -ын хамт
+                    <p style="color: rgba(42, 44, 57, 0.9);">Энэ хэсэгт орон дээрээ хийж болох буюу хэвтээ дасгалууд
+                      заавар болон шатаах ккал -ын хамт
                       өгөгдөв.
                     </p>
                   </div>
@@ -288,7 +313,7 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="service-item position-relative" ; style="background-color: rgba(255, 255, 255, 0.9);">
-                
+
                 <a href="dasgal.html" class="stretched-link">
                   <div>
                     <a href=""><img src="Group 82.png" alt="or deer" height="260px" style="padding-left: 0;"></a>
@@ -296,7 +321,8 @@
                       <a href="dasgal.html" class="stretched-link">
                         <h3 style="color: rgba(42, 44, 57, 0.9);">Сандал дээрээ</h3>
                       </a>
-                      <p style="color: rgba(42, 44, 57, 0.9);">Энэ хэсэгт сандал дээрээ хийж болох буюу оффис дасгалууд заавар болон шатаах ккал -ын хамт
+                      <p style="color: rgba(42, 44, 57, 0.9);">Энэ хэсэгт сандал дээрээ хийж болох буюу оффис дасгалууд
+                        заавар болон шатаах ккал -ын хамт
                         өгөгдөв.
                       </p>
                     </div>
@@ -306,21 +332,22 @@
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div class="service-item position-relative" ; style="background-color: rgba(255, 255, 255, 0.9)">
-               
-                  <a href=""><img src="idc.png" alt="idc deer" height="260px" style="padding-left: 0;"></a>
-                  <div>
-                    <a href="idc.html" class="stretched-link">
-                      <h3 style="color: rgba(42, 44, 57, 0.9);">Хаана ч хамаагүй</h3>
-                    </a>
-                    <p style="color: rgba(42, 44, 57, 0.9);">Энэ хэсэгт хаана ч хамаагүй хийж болох дасгалууд заавар болон шатаах ккал -ын хамт өгөгдөв.
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End Service Item -->
 
-            </div>
+                <a href=""><img src="idc.png" alt="idc deer" height="260px" style="padding-left: 0;"></a>
+                <div>
+                  <a href="idc.html" class="stretched-link">
+                    <h3 style="color: rgba(42, 44, 57, 0.9);">Хаана ч хамаагүй</h3>
+                  </a>
+                  <p style="color: rgba(42, 44, 57, 0.9);">Энэ хэсэгт хаана ч хамаагүй хийж болох дасгалууд заавар болон
+                    шатаах ккал -ын хамт өгөгдөв.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
 
           </div>
+
+        </div>
 
       </section>
     </section><!-- /Call To Action Section -->
@@ -330,82 +357,81 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2></h2>
-        <p></p>
       </div><!-- End Section Title -->
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 style="font-size: 20px;">Таньд зориулсан</h2>
-        <p style="position: absolute;">Онцлох бүтээгдэхүүн</p>
+        <p style="position: absolute; font-size: 30px;">Онцлох бүтээгдэхүүн</p>
       </div><!-- End Section Title -->
+    </section>
 
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
 
-        <div id="portfolio-carousel" data-bs-interval="5000" class="container carousel carousel-fade"
-          data-bs-ride="carousel">
-          <img src="" class="img-fluid" ; style="width: 90%;">
+      <div id="portfolio-carousel" data-bs-interval="5000" class="container carousel carousel-fade"
+        data-bs-ride="carousel">
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active" ; style="background-color: #5aa9e6; border-radius: 30px; color: aliceblue;">
-            <div class="carousel-container">
-              <h2 class="animate__animated animate__fadeInDown" ; style="color: aliceblue;">Тавтай морил!</h2>
-              <p class="animate__animated animate__fadeInUp">Залхуу фитнесс вебсайт нь суунгаа ажил хийдэг, дасгал
-                хийхэд
-                цаг зарцуулж чаддагүй, мөн хүнд дасгалд тийм ч дуртай биш Gen z үеээс эхлүүлээд ямар ч насны хүмүүст
-                хялбараар хэдхэн хормын дотор бүх биеээ хөдөлгөх аргыг хуваалцах вебсайт юм. </p>
-            </div>
+        <!-- Slide 1 -->
+        <div class="carousel-item active" ;
+          style="background-color: #5aa9e6; border-radius: 30px; color: aliceblue; height: 4%;">
+
+          <img src="merch.png" ;
+            style="height: 530px; margin-bottom: 10px; position: absolute; justify-content: space-between; align-items: center;">
+
+          <div class="carousel-container">
+
+            <h2 class="animate__animated animate__fadeInDown" ; style="color: aliceblue;">
+
+            </h2>
+            <p class="animate__animated animate__fadeInUp"></p>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" ;
-            style="background-color: #5aa9e6; color: aliceblue; border-radius: 30px; color: aliceblue;">
-            <div class="carousel-container">
-              <h2 class="animate__animated animate__fadeInDown" ; style="color: aliceblue;">Фитнес</h2>
-              <p class="animate__animated animate__fadeInUp">Манай зорилго бол фитнессийг залхуу хүмүүст хүртээмжтэй,
-                энгийн, зугаатай болгох явдал юм. Бид эрүүл амьдралын хэв маягт шилжихийг хүсдэг ч цаг зав багатай,
-                эсвэл
-                хүнд дасгалын хөтөлбөрөөс зугтах хүсэлтэй хүмүүст зориулсан хялбар, ойлгомжтой аргуудыг санал болгодог.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" ;
-            style="background-color: #5aa9e6; color: aliceblue; border-radius: 30px; color: aliceblue;">
-            <div class="carousel-container">
-              <h2 class="animate__animated animate__fadeInDown" ; style="color: aliceblue;">Мерч</h2>
-              <p class="animate__animated animate__fadeInUp">Бидний мерч нь таны өдөр тутмын амьдралыг сайжруулах, таны
-                стиль, эрүүл мэндийн зорилгод нийцсэн бүтээгдэхүүнүүдийг санал болгодог.</p>
-            </div>
-          </div>
-
-          <a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-
-          <a class="carousel-control-next" href="#portfolio-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
-
         </div>
 
-      </section><!-- /Portfolio Section -->
+        <!-- Slide 2 -->
+        <div class="carousel-item" ;
+          style="background-color: #5aa9e6; color: aliceblue; border-radius: 30px; color: aliceblue;">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown" ; style="color: aliceblue;"></h2>
+            <p class="animate__animated animate__fadeInUp">.
+            </p>
+          </div>
+        </div>
 
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials section">
+        <!-- Slide 3 -->
+        <div class="carousel-item" ;
+          style="background-color: #5aa9e6; color: aliceblue; border-radius: 30px; color: aliceblue;">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown" ; style="color: aliceblue;"></h2>
+            <p class="animate__animated animate__fadeInUp"></p>
+          </div>
+        </div>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2 style="font-size: 20px;">Эшлэл</h2>
-          <p style="position: absolute;">Таньд хань болох үгс</p>
-        </div><!-- End Section Title -->
+        <a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <a class="carousel-control-next" href="#portfolio-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
 
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="font-size: 20px;">Эшлэл</h2>
+        <p style="position: absolute;">Танд хань болох үгс</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -430,195 +456,353 @@
               }
             }
           </script>
-            <div class="swiper-wrapper">
+          <div class="swiper-wrapper">
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <h3>Уолт Дисней</h3>
-                  <h4>Хүүхэлдэйн киноны зураач, продюссэр, найруулагч, зохиолч, дуу оруулагч, бизнесмен</h4>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Бүх мөрөөдөл биелж чадна, хэрэв та зоригтойгоор үргэлжлүүлэн зүтгэвэл.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" ; style="height: 300px;">
+                <h3>Уолт Дисней</h3>
+                <h4>Хүүхэлдэйн киноны зураач, продюссэр, найруулагч, зохиолч, дуу оруулагч, бизнесмен</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Бүх мөрөөдөл биелж чадна, хэрэв та зоригтойгоор үргэлжлүүлэн зүтгэвэл.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <h3>Нельсон Мандела</h3>
-                  <h4>Өмнөд Африкийн Ерөнхийлөгч асан</h4>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Амжилт бол унахдаа хичнээн удаа босох чадвараар хэмжигддэг.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" ; style="height: 300px;">
+                <h3>Нельсон Мандела</h3>
+                <h4>Өмнөд Африкийн Ерөнхийлөгч асан</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Амжилт бол унахдаа хэчнээн удаа босох чадвараар хэмжигддэг.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <h3>Томас Эдисон</h3>
-                  <h4>Зохион бүтээгч, бизнесмен</h4>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Би бүтэлгүйтээгүй, би амжилтгүй болсон 10,000 аргыг олсон.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" ; style="height: 300px;">
+                <h3>Томас Эдисон</h3>
+                <h4>Зохион бүтээгч, бизнесмен</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Би бүтэлгүйтээгүй, би амжилтгүй болсон 10,000 аргыг олсон.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <h3>Винстон Черчилль</h3>
-                  <h4>Их Британийн төрийн зүтгэлтэн, цэрэг, зохиолч, Их Британийн хоёр удаа Ерөнхий сайд байсан.</h4>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Амжилт бол амжилтаас амжилтанд хүрэхийн хоорондох урам зоригийг алдахгүй байх явдал юм.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" ; style="height: 300px;">
+                <h3>Винстон Черчилль</h3>
+                <h4>Их Британийн төрийн зүтгэлтэн, цэрэг, зохиолч, Их Британийн хоёр удаа Ерөнхий сайд байсан.</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Амжилт бол амжилтаас амжилтад хүрэхийн хоорондох урам зоригийг алдахгүй байх явдал юм.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <h3>Хенри Форд</h3>
-                  <h4>Форд Мотор компаний үндэслэгч</h4>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Амжилт бол ганцхан үйлдэл биш, олон удаагийн хичээл зүтгэлийн үр дүн юм.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
+            <div class="swiper-slide">
+              <div class="testimonial-item" ; style="height: 300px;">
+                <h3>Хенри Форд</h3>
+                <h4>Форд Мотор компанийн үндэслэгч</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Амжилт бол ганцхан үйлдэл биш, олон удаагийн хичээл зүтгэлийн үр дүн юм.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section" style="padding-left: 0%;">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="font-size: 20px;">Заавар</h2>
+        <p>Түгээмэл асуулт</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-12">
+            <div class="custom-accordion" id="accordion-faq">
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                    Хэрхэн өөрийн хэвийн жин, түвшин болон түүнд зориулсан зөвлөгөө авах вэ?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordion-faq">
+                  <div class="accordion-body" ; style="font-size: 20px;">
+                    • Та баруун дээд талд байрших тооны машин дээр даран өндөр жингээ оруулан тооцоолуулах боломжтой.
+                  </div>
                 </div>
-              </div><!-- End testimonial item -->
+              </div>
+              <!-- .accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-faq-2">
+                    Фитнесийн хөтөлбөрийн үр дүн хэдийд харагдах вэ?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                  <div class="accordion-body" ; style="font-size: 20px;">
+                    • Хөтөлбөрийн үр дүн таны зорилго, дасгалын давтамж,
+                    хооллолт зэрэг хүчин зүйлээс хамаарна. Та хийсэн дасгалаа сонгож дуусгах товчийг дарахад
+                    өнөөдөр хийсэн дасгалын шатаасан илчлэгээ харах боломжтой.
+                  </div>
+                </div>
+              </div>
+              <!-- .accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-faq-3">
+                    Үйлчилгээний төлбөр ямар байх вэ?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+                  <div class="accordion-body" ; style="font-size: 20px;">
+                    • Дасгал хийх үйл явц нэвтэрч орсноор эхлэх ба үүнд ямар нэг төлбөр байхгүй болно.
+                  </div>
+                </div>
+              </div>
+              <!-- .accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-faq-4">
+                    Фитнесийн хөтөлбөрийг хэрхэн эхлэх вэ?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-4" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-faq">
+                  <div class="accordion-body" ; style="font-size: 20px;">
+                    • Фитнесийн хөтөлбөрийг эхлэхийн тулд манай сайтад бүртгүүлж, өөрийн зорилго,
+                    шаардлагын дагуу
+                    тохирсон хөтөлбөрийг сонгох боломжтой. Мөн өөрийн хувийн мэдээллийг бөглөх шаардлагатай.
+                  </div>
+                </div>
+              </div>
+              <!-- .accordion-item -->
+
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-faq-5">
+                    Тусламж авах бол хэрхэн холбоо барих вэ?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-3" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-faq">
+                  <div class="accordion-body" ; style="font-size: 20px;">
+                    • Хэрэв танд тусламж хэрэгтэй бол “Холбоо барих” хэсгээс мэйл,
+                    утасны дугаараар бидэнтэй холбогдож болно.
+                  </div>
+                </div>
+              </div>
+              <!-- .accordion-item -->
 
             </div>
-            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Faq Section -->
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div class="tab-pane fade active show" id="features-tab-1">
+          <div id="bgimg">
+            <div class="w3-container">
+
+              <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+
+                  <div class="w3-container" style="color: aliceblue;">
+                    <script>
+                      function bmi() {
+                        var h = parseFloat(document.getElementById('height').value);
+                        var w = parseFloat(document.getElementById('weight').value);
+                        var c = h / 100;
+                        var d = c * c;
+                        var ans = w / d;
+
+                        if (0 < ans && ans <= 18.50) {
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь та туранхай байгааг харуулж байна!.<br>Тиймд танд жингээ нэмэхийг зөвлөж байна ";
+                        }
+
+                        else if (18.51 <= ans && ans <= 24.90) {
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таны жин хэвийн байгааг харуулж байна.<br>Тиймд танд жингээ барихыг зөвлөж байна";
+                        }
+
+                        else if (24.91 <= ans && ans <= 29.90) {
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таны жин илүүдэлтэй байгааг харуулж байна!.<br>Тиймд танд жингээ хасахийг зөвлөж байна";
+                        }
+
+                        else if (29.91 <= ans && ans <= 34.90) {
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг I зэргийн таргалалттай байгааг харуулж байна!.<br>Тиймд танд жингээ хасахийг зөвлөж байна";
+                        }
+
+                        else if (34.91 <= ans && ans <= 39.90) {
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг II зэргийн таргалалттай байгааг харуулж байна!!!.<br>Та удаан амьдармааргүй байна уу?<br>Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !!";
+                        }
+
+                        else if (39.91 <= ans) {
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг III зэргийн таргалалттай байгааг харуулж байна!!!.<br>Та удаан амьдармааргүй байна уу?<br>Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !!";
+                        }
+
+
+                      }
+
+                      function bmi1() {
+                        var h = parseFloat(document.getElementById('height').value);
+                        var w = parseFloat(document.getElementById('weight').value);
+                        var c = h / 100;
+                        var d = c * c;
+                        var wi = 18.51 * d;
+                        var wa = 24.50 * d;
+                        document.getElementById('answer').innerHTML = "Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой";
+
+                      }
+                    </script>
+
+                    <body>
+                      <h1 style="color: azure;"><br>Тооцоологч</h1>
+                      <Hr>
+                      Өндрөө оруулна уу. (см) : <input type="number" id="height" value="160"><br>
+                      Жингээ оруулна уу. (кг) : <input type="number" id="weight" value="60"><br><BR>
+                      <input type="submit" class="button button1" value="Биеийн жингийн индекс тооцоологч"
+                        onclick="bmi()">
+                      <input type="submit" class="button button1" value="Биеийн хэвийн жин тооцоологч" onclick="bmi1()">
+                      <p id="answer"></p>
+                    </body>
+                  </div>
+                  <footer class="w3-container w3-teal">
+                    <p>Баярлалаа!</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
-
-      </section><!-- /Testimonials Section -->
-
- <!-- Faq Section -->
- <section id="faq" class="faq section"  style="padding-left: 0%;">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2 style="font-size: 20px;">Заавар</h2>
-    <p  style="font-size: 50px;">Түгээмэл асуулт, хариулт                        </p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="col-12">
-        <div class="custom-accordion" id="accordion-faq">
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-1">
-                Тусламж авах бол хэрхэн холбоо барих вэ?
-              </button>
-            </h2>
-
-            <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne"
-              data-parent="#accordion-faq">
-              <div class="accordion-body"; style="font-size: 20px;">
-                • Хэрэв танд тусламж хэрэгтэй бол “Холбоо барих” хэсгээс имэйл, 
-                утасны дугаараар бидэнтэй холбогдож болно.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-2">
-                Фитнесийн хөтөлбөрийн үр дүн хэдийд харагдах вэ?
-              </button>
-            </h2>
-
-            <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
-              <div class="accordion-body"; style="font-size: 20px;">
-                • Хөтөлбөрийн үр дүн таны зорилго, дасгалын давтамж, 
-                хооллолт зэрэг хүчин зүйлээс хамаарна. Та хийсэн дасгалаа сонгож дуусгах товчийг дарахад 
-                өнөөдөр хийсэн дасгалын шатаасан илчлэгээ харах боломжтой.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-3">
-                Үйлчилгээний төлбөр ямар байх вэ?
-              </button>
-            </h2>
-
-            <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
-              <div class="accordion-body"; style="font-size: 20px;">
-                • Дасгал хийх үйл явц нэвтэрч орсноор эхлэх ба үүнд ямар нэг төлбөр байхгүй болно.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-faq-4">
-                Фитнесийн хөтөлбөрийг хэрхэн эхлэх вэ?
-              </button>
-            </h2>
-
-            <div id="collapse-faq-4" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-faq">
-              <div class="accordion-body"; style="font-size: 20px;">
-                • Фитнесийн хөтөлбөрийг эхлэхийн тулд манай сайтад бүртгүүлж, өөрийн зорилго, 
-                шаардлагын дагуу
-                тохирсон хөтөлбөрийг сонгох боломжтой. Мөн өөрийн хувийн мэдээллийг бөглөх шаардлагатай.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
       </div>
     </div>
-  </div>
-  </div>
-</section><!-- /Faq Section -->
-      <!-- Recent Posts Section -->
-      <section id="recent-posts" class="recent-posts section">
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Санал болгох</h2>
-          <p>Сувгууд<br></p>
-        </div><!-- End Section Title -->
 
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
+
+
+    </script><!-- End Tab Content Item -->
+
+
+    <div id="news" class="newss">
+
+      <!-- Page Title -->
+      <div class="page-title dark-background">
+        <div class="container position-relative">
+          <h1>Сор мэдээ мэдээлэл</h1>
+          <p>Танд хэрэгтэй мэдээллийг сорчлон хүргэх хуудас</p>
+        </div>
+      </div><!-- End Page Title -->
+
+
+      <!-- ======= Why Us Section ======= -->
+      <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
         <div class="container">
 
-          <div class="row gy-4">
+          <div class="row">
+            <div class="col-lg-6 video-box" style="display: flex;">
+              <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
+              <iframe style="padding-left: 0px; padding-top: 50px;" width="900px" height="380px"
+                src="https://www.youtube.com/embed/videoseries?si=nFw32fEUkRaUkza7&amp;list=PLfWarXLC6rbUQdnTiuPAUuJ6tRwP1634v"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+            </div>
 
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                <h4 class="title"><a href="">"Tanvi Parikh"</a></h4>
+                <p class="description">"The FitGrit" бол мөрөөдлийнхөө биеийг олж
+                  авахын тулд "эрх зориг"-ыг бий болгох явдал юм. Би таны
+                  фитнессийн аялалыг сонирхож, оюун санааны болон бие бялдрын
+                  хязгаарыг дагахын тулд хэд хэдэн дасгалын сорилтуудыг бий болгосон.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section><!-- End Why Us Section -->
+
+
+
+      <!-- Section Title -->
+      <div id="blog" class="container section-title" data-aos="fade-up" style="padding-top: 40px;">
+        <h2>Санал болгох</h2>
+        <p>Нийтлэлүүд</p>
+      </div><!-- End Section Title -->
+
+      <!-- Blog Posts Section -->
+
+      <section id="blog-posts" class="blog-posts section">
+
+        <div class="container">
+          <div class="row gy-4" style="padding-top: 0px;">
+
+            <div class="col-lg-4">
               <article>
 
                 <div class="post-img">
-                  <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                  <img src="yoga_cvr.jpg" alt="" class="img-fluid">
                 </div>
 
-                <p class="post-category">Politics</p>
+                <p class="post-category">Эрүүл мэнд</p>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                  <a
+                    href="https://www.buro247.mn/individual/health/yog-shinzhlekh-ukhaany-dnees-yamar-ashig-tustay-ve-mergezhiltniy-khariult.html">Йог
+                    шинжлэх ухааны үүднээс ямар ашиг тустай вэ?</a>
                 </h2>
 
                 <div class="d-flex align-items-center">
-                  <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <img src="buro.jpg" class="img-fluid post-author-img flex-shrink-0">
                   <div class="post-meta">
-                    <p class="post-author">Maria Doe</p>
+                    <p class="post-author">buro.mongolia</p>
                     <p class="post-date">
-                      <time datetime="2022-01-01">Jan 1, 2022</time>
+                      <time datetime="2022-01-01">2024-07-24, 12:00</time>
                     </p>
                   </div>
                 </div>
@@ -626,25 +810,29 @@
               </article>
             </div><!-- End post list item -->
 
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4">
               <article>
 
                 <div class="post-img">
                   <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+
                 </div>
 
-                <p class="post-category">Sports</p>
+                <p class="post-category">Эрүүл мэнд</p>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                  <a
+                    href="https://www.buro247.mn/individual/health/applikeyshn-ashiglazh-sh-niyn-noyroo-khyanakh-n-noyrg-ydeld-kh-gedeg.html">Аппликейшн
+                    ашиглаж
+                    шөнийн нойроо хянах нь нойргүйдлийг улам дордуулдаг уу?</a>
                 </h2>
 
                 <div class="d-flex align-items-center">
-                  <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <img src="buro.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                   <div class="post-meta">
-                    <p class="post-author">Allisa Mayer</p>
+                    <p class="post-author"> Buro.Mongolia</p>
                     <p class="post-date">
-                      <time datetime="2022-01-01">Jun 5, 2022</time>
+                      <time datetime="2022-01-01">2024-07-17, 15:00 </time>
                     </p>
                   </div>
                 </div>
@@ -652,23 +840,25 @@
               </article>
             </div><!-- End post list item -->
 
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4">
               <article>
 
                 <div class="post-img">
-                  <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                  <img src="hea.jpg" alt="" class="img-fluid">
                 </div>
 
-                <p class="post-category">Entertainment</p>
+                <p class="post-category">Эрүүл хооллолт</p>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a
+                    href="https://www.buro247.mn/individual/health/kherkhen-offis-deeree-z-v-khoolny-deglem-barikh-ve.html">Хэрхэн
+                    оффис дээрээ ч эрүүл хоолны дэглэмтэй байх вэ?</a>
                 </h2>
 
                 <div class="d-flex align-items-center">
-                  <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <img src="buro.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                   <div class="post-meta">
-                    <p class="post-author">Mark Dower</p>
+                    <p class="post-author">Buro.Mongolia</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jun 22, 2022</time>
                     </p>
@@ -678,137 +868,235 @@
               </article>
             </div><!-- End post list item -->
 
-          </div><!-- End recent posts list -->
+            <div class="col-lg-4">
+              <article>
+
+                <div class="post-img">
+                  <img src="scream.jpg" alt="" class="img-fluid">
+                </div>
+
+                <p class="post-category">Эрүүл мэнд</p>
+
+                <h2 class="title">
+                  <a
+                    href="https://www.buro247.mn/individual/health/changaar-khashkhirakh-n-shine-t-rliyn-yoga-m-n.html">Чангаар
+                    хашхирах нь шинэ төрлийн йога мөн үү?</a>
+                </h2>
+
+                <div class="d-flex align-items-center">
+                  <img src="buro.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <div class="post-meta">
+                    <p class="post-author">Buro.Mongolia</p>
+                    <p class="post-date">
+                      <time datetime="2022-01-01">Jun 30, 2022</time>
+                    </p>
+                  </div>
+                </div>
+
+              </article>
+            </div><!-- End post list item -->
+
+            <div class="col-lg-4">
+              <article>
+
+                <div class="post-img">
+                  <img src="hulruh.jpg" alt="" class="img-fluid">
+                </div>
+
+                <p class="post-category">Дасгал</p>
+
+                <h2 class="title">
+                  <a
+                    href="https://www.buro247.mn/individual/health/khet-ikh-kh-lr-kh-durg-y-er-l-mendiyn-shaltgaantay-kh-m-st-tokhiromzhtoy-dasgaluud.html">Хэт
+                    их хөлрөх дургүй, эрүүл мэндийн шалтгаантай хүмүүст тохиромжтой дасгалууд</a>
+                </h2>
+
+                <div class="d-flex align-items-center">
+                  <img src="buro.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <div class="post-meta">
+                    <p class="post-author">Buro.Mongolia</p>
+                    <p class="post-date">
+                      <time datetime="2022-01-01">2021-08-25, 16:29</time>
+                    </p>
+                  </div>
+                </div>
+
+              </article>
+            </div><!-- End post list item -->
+
+            <div class="col-lg-4">
+              <article>
+
+                <div class="post-img">
+                  <img src="huvtsas.jpg" alt="" class="img-fluid">
+                </div>
+
+                <p class="post-category">Эрүүл мэнд</p>
+
+                <h2 class="title">
+                  <a
+                    href="https://www.buro247.mn/individual/health/nuruund-s-rg-r-n-l-ld-g-5-khuvtcas-bolon-gutal.html">Нуруунд
+                    сөргөөр нөлөөлдөг 5 хувцас болон гутал</a>
+                </h2>
+
+                <div class="d-flex align-items-center">
+                  <img src="buro.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <div class="post-meta">
+                    <p class="post-author">Buro.Mongolia</p>
+                    <p class="post-date">
+                      <time datetime="2022-01-01">Feb 14, 2022</time>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div><!-- End post list item -->
+
+          </div>
+        </div>
+
+      </section><!-- /Blog Posts Section -->
+
+      <!-- Section Title -->
+      <div id="youtube" class="container section-title" data-aos="fade-up" style="padding-top: 40px;">
+        <h2>Санал болгох</h2>
+        <p>Youtube сувгууд</p>
+      </div><!-- End Section Title -->
+
+      <!--youtube channels-->
+      <main class="main">
+        <div class="container">
+
+          <div class="row gy-3">
+            <!-- Timer Section 2 -->
+
+
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item">
+                <ul>
+                  <img src="youtube.ch.jpg" alt="" width="100%" style="border-radius: 300px;">
+                  <h5 style="margin-top: 30px;text-align: center;">
+                    <a href="https://www.youtube.com/@lidiavmera" style="margin-top: 30px;">The Root Yoga</a>
+                  </h5>
+                  <p style="text-align: center;"> Маш олон төрлийн йогийг
+                    багтаасан бөгөөд сэтгэлзүйн бясалгал гэх
+                    мэт зүйлсүүдийг үзэж болно.</p>
+                </ul>
+              </div>
+            </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+            <!-- Timer Section 2 -->
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item">
+                <ul>
+                  <img src="youtube.ch2.jpg" alt="" width="100%" style="border-radius: 300px;">
+                  <h5 style="margin-top: 30px; text-align: center;">
+                    <a href="https://www.youtube.com/@na_muun/videos" style="margin-top: 30px;">Mongolian Mother</a>
+                  </h5>
+                  <p style="text-align: center;">Монгол Youtuber бөгөөд байгаль хамгаалал, хог хаягдал, минимализм,
+                    спорт, гоо сайхан, нүүр будалтын тухай видеонуудыг
+                    үзэх боломжтой.
+                  </p>
+                </ul>
+              </div>
+            </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+            <!-- Timer Section 3 -->
+            <!-- Timer Section 2 -->
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item">
+                <ul>
+                  <img src="youtube.ch3.jpg" alt="" width="100%" style="border-radius: 300px;">
+                  <h5 style="margin-top: 30px; text-align: center;">
+                    <a href="https://www.youtube.com/@lidiavmera" style="margin-top: 30px;">Хурдан дасгал</a>
+                  </h5>
+                  <p style="text-align: center;">Дасгалыг өдөр бүрийнхээ дадал болгох хүсэлтэй хүмүүст тохирсон цөөн
+                    минутын дасгал.</p>
+                </ul>
+              </div>
+            </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+            <!-- Timer Section 2 -->
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item">
+                <ul>
+                  <img src="youtube.ch4.jpg" alt="" width="100%" style="border-radius: 300px;">
+                  <h5 style="margin-top: 30px; text-align: center;">
+                    <a href="https://www.youtube.com/@faceyogamethod" style="margin-top: 30px;">Нүүрний Йог</a>
+                  </h5>
+                  <p style="text-align: center;"> Нүүрний йог нь хөгшрөлтийн
+                    эсрэг болон эмчилгээний төгс хувилбар юм.</p>
+                </ul>
+              </div>
+            </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+            <!-- Blog Posts Section -->
+
+            
+
+          </div>
+        </div>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Бидэнтэй</h2>
+        <p>Холбоо барих</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3" style="justify-content: center; justify-content: space-between;">
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div style="height:155px;">
+              <h6><span class="bi bi-geo-alt flex-shrink-0" style="color:rgb(99, 95, 116);"> Хаяг</span></h6>
+              <i style="font-size: 16px;">ШУТИС 6-р байр 3 давхар 317-р тоот</i>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div style="height:155px;">
+
+              <h6><span class="bi bi-telephone flex-shrink-0" style="color:rgb(99, 95, 116);"> Утасны  дугаар</span></h6>
+              <i style="font-size: 16px;"> +976 89803494</i>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div style="height: 155px;">
+              <h6><span class="bi bi-envelope flex-shrink-0" style="color:rgb(99, 95, 116);"> Мэйл</span></h6>
+              <i style="font-size: 16px;"> resistantbtn@gmail.com</i>
+            </div>
+          </div><!-- End Pricing Item -->
+
+
 
         </div>
 
-      </section><!-- /Recent Posts Section -->
-
-
-   <!-- Features Section -->
-   <section id="features" class="features section">
-
-    <div class="container">
-
-      <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
-        <li class="nav-item col-3">
-          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-            <i class="bi bi-binoculars"></i>
-            <h4 class="d-none d-lg-block">Таны хэвийн жин, илчлэг тооцоологч</h4>
-          </a>
-        </li>
-        <li class="nav-item col-3">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-            <i class="bi bi-box-seam"></i>
-            <h4 class="d-none d-lg-block">Нэвтрэх</h4>
-          </a>
-        </li>
-        <li class="nav-item col-3">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-            <i class="bi bi-brightness-high"></i>
-            <h4 class="d-none d-lg-block">Бүртгүүлэх</h4>
-          </a>
-        </li>
-        <li class="nav-item col-3">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-            <i class="bi bi-command"></i>
-            <h4 class="d-none d-lg-block">Бүртгэлийн хаяг</h4>
-          </a>
-        </li>
-      </ul><!-- End Tab Nav -->
-
-           <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form>
-      </div><!-- End Contact Form -->
-
-  </section><!-- /Features Section -->
-
- <!-- Contact Section -->
- <section id="contact" class="contact section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Бидэнтэй</h2>
-    <p>Холбоо барих</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade" data-aos-delay="100">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-4">
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-          <i class="bi bi-geo-alt flex-shrink-0"></i>
-          <div>
-            <h3>Хаяг</h3>
-            <p>ШУТИС 6-р байр 3 давхар 317-р тоот</p>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-          <i class="bi bi-telephone flex-shrink-0"></i>
-          <div>
-            <h3>Утасны дугаар</h3>
-            <p>+976 89803494</p>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-          <i class="bi bi-envelope flex-shrink-0"></i>
-          <div>
-            <h3>имэйл</h3>
-            <p>resistantbtn@gmail.com</p>
-          </div>
-        </div><!-- End Info Item -->
-
       </div>
 
-    </div>
-
-  </div>
-
-</section><!-- /Contact Section -->
+    </section>
+    <!-- /Contact Section -->
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background" style="background-color: rgba(42, 44, 57, 0.9);">
     <div class="container">
-      <h3 class="sitename">Залхуу Фитнес</h3>
-      <p>Залуу хүн завтай байна гэдэг эмгэнэл...</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+      <h3 class="sitename">Талархал</h3>
+      <p>Бидэнд суралцах боломжийг олгосон ивээн тэтгэгч байгууллагууддаа баярлалаа. </p>
+      <div class="social-links d-flex justify-content-center" style="height: 50px;">
+        <img src="golomt.png">
+        <img src="nano.png">
+        <img src="ondo.png">
+        <img src="unicef.png">
+        <img src="energy.png">
+        <img src="shutis1.png">
+        <img src="nature1.png">
       </div>
       <div class="container">
         <div class="copyright">
@@ -822,6 +1110,7 @@
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         </div>
       </div>
+    </div>
     </div>
   </footer>
 
