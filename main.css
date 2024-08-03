@@ -147,7 +147,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 15px 0;
   position: fixed;
   justify-content: space-around;
   transition: all 0.2s;
@@ -2400,8 +2400,9 @@ body {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
 }
+
 /*--------------------------------------------------------------
-# Pricing Section
+# DASGAL SANDAL
 --------------------------------------------------------------*/
 .pricing .pricing-item {
   background-color: var(--surface-color);
@@ -2411,6 +2412,7 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+
 }
 
 .pricing .pricing-item h3 {
@@ -2487,6 +2489,7 @@ body {
 
 .pricing .btn-buy:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+
 }
 
 .pricing .featured h3 {
@@ -2505,4 +2508,46 @@ body {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax);
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 15px;
+  padding: 10px;
+  background: rba(255, 255, 255, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur {
+
+  filter: blur(5px);
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
 }
