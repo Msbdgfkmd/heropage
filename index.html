@@ -10,6 +10,9 @@
   <meta content="" name="keywords">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="nav.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
 
 
   <!-- Favicons -->
@@ -36,7 +39,11 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- =======================================================
   * Template Name: Selecao
@@ -121,7 +128,9 @@
             <p class="animate__animated animate__fadeInUp">Залхуу фитнес вэбсайт нь суунгаа ажил хийдэг, дасгал хийхэд
               цаг зарцуулж чаддаггүй, мөн хүнд дасгалд тийм ч дуртай биш хүмүүст
               хялбараар хэдхэн хормын дотор бүх биеэ хөдөлгөх аргыг хуваалцах вэбсайт юм. </p>
-            <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Эхэлье </a>
+              <a href="#overlay" class="btn-get-started animate__animated animate__fadeInUp scrollto"
+              id="openOverlay">Танилцъя</a>
+
             <div><iframe src="every img/zagas1.gif" width="900px" height="900px" style="position: absolute; 
               top: 350px;
               left: 600px; z-index: 10;" frameBorder="0" allowFullScreen></iframe>
@@ -260,6 +269,47 @@
       </svg>
 
     </section><!-- /Hero Section -->
+
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn" id="closeOverlay" style="border-radius: 25px;">&times;</span>
+        <section id="present" class="present section"><br><br>
+
+          <div id="present-carousel" data-bs-interval="5000" class="container carousel carousel-fade"
+            data-bs-ride="carousel">
+    
+            <!-- Slide 1 -->
+            <div class="carousel-item active" ;
+              style=" border-radius: 30px; color: aliceblue; height: 100%;">
+               
+              <div class="carousel-container">
+                
+                <div class="container">
+                  <div class="item"><img src="every img/pdf/Залхуу Фитнесс_page-0001.jpg" style="width: 100%; height: auto; position: absolute;"></div>
+                  <div class="item"><img src="every img/pdf/Залхуу Фитнесс_page-0001.jpg" style="width: 100%; height: auto; position: absolute;"></div>
+                  <div class="item"><img src="every img/pdf/Залхуу Фитнесс_page-0001.jpg" style="width: 100%; height: auto; position: absolute;"></div>
+                  <div class="item"><img src="every img/pdf/Залхуу Фитнесс_page-0001.jpg" style="width: 100%; height: auto; position: absolute;"></div>
+                  <div class="item"><img src="every img/pdf/Залхуу Фитнесс_page-0001.jpg" style="width: 100%; height: auto; position: absolute;"></div>
+                  <div class="item"><img src="every img/pdf/Залхуу Фитнесс_page-0001.jpg" style="width: 100%; height: auto; position: absolute;"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <a class="present-control-prev" href="#present-carousel" role="button" data-bs-slide="prev">
+              <span class="present-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+    
+            <a class="present-control-next" href="#present-carousel" role="button" data-bs-slide="next">
+              <span class="present-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+    
+          </div>
+    
+        </section><!-- /Portfolio Section -->
+      </div>
+    </div>
+    <script src="script.js"></script>
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -688,7 +738,7 @@
               <div id="id01" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
 
-                  <div class="w3-container" style="color: aliceblue;">
+                  <div class="w3-container" style="color: rgb(12, 12, 12);">
                     <script>
                       function bmi() {
                         var h = parseFloat(document.getElementById('height').value);
@@ -696,59 +746,75 @@
                         var c = h / 100;
                         var d = c * c;
                         var ans = w / d;
-
+                        var wi = 18.51 * d;
+                        var wa = 24.50 * d;
                         if (0 < ans && ans <= 18.50) {
-                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь та туранхай байгааг харуулж байна!.<br>Тиймд танд жингээ нэмэхийг зөвлөж байна ";
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг туранхай байгааг харуулж байна!.<br>Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илчлэгихтэй хоол хүнс хэрэглэж, илчлэг их зарцуулдаг кардио дасгалыг хэт их хийхээс зайлсхийж, булчингийн  масс нэмэхэд илүү анхаараарай.";
                         }
 
                         else if (18.51 <= ans && ans <= 24.90) {
-                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таны жин хэвийн байгааг харуулж байна.<br>Тиймд танд жингээ барихыг зөвлөж байна";
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Биеийн жин хэвийн байгаа тул жингээ хадгалж шим тэжээлтэй хоол хүнсийг тэнцвэртэйгээр хэрэглэж авах ёстой илчлэгээ  авч тогтмол дасгал хөдөлгөөн хийж эрүүл зөв амьдралыг бүтээгээрэй.Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой.";
                         }
 
                         else if (24.91 <= ans && ans <= 29.90) {
-                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таны жин илүүдэлтэй байгааг харуулж байна!.<br>Тиймд танд жингээ хасахийг зөвлөж байна";
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг жингийн илүүдэлтэй байгааг харуулж байна!. Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй тэнцвэртэйгээр бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн  дасгал хөдөлгөөн хийхэд илүү анхаараарай.";
                         }
 
                         else if (29.91 <= ans && ans <= 34.90) {
-                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг I зэргийн таргалалттай байгааг харуулж байна!.<br>Тиймд танд жингээ хасахийг зөвлөж байна";
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг I зэргийн таргалалттай байгааг харуулж байна!. Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй тэнцвэртэйгээр бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн  дасгал хөдөлгөөн тогтмол хийхэд илүү анхаараарай.";
                         }
 
                         else if (34.91 <= ans && ans <= 39.90) {
-                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг II зэргийн таргалалттай байгааг харуулж байна!!!.<br>Та удаан амьдармааргүй байна уу?<br>Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !!";
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг II зэргийн таргалалттай байгааг харуулж байна!!!. Та удаан амьдармааргүй байна уу? Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !! Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй тэнцвэртэйгээр бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн  дасгал хөдөлгөөн байнга хийхэд маш их анхаараарай.";
                         }
 
                         else if (39.91 <= ans) {
-                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг III зэргийн таргалалттай байгааг харуулж байна!!!.<br>Та удаан амьдармааргүй байна уу?<br>Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !!";
+                          document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг III зэргийн таргалалттай байгааг харуулж байна!!!. Та удаан амьдрахыг хүсэхгүй байна гэж үү? Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !! Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй давтамжтайгаар бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн дасгал хөдөлгөөн байнга хийж амьдралын хэв маягаа зөв болгоход илүү анхаараарай.";
                         }
 
-
-                      }
-
-                      function bmi1() {
-                        var h = parseFloat(document.getElementById('height').value);
-                        var w = parseFloat(document.getElementById('weight').value);
-                        var c = h / 100;
-                        var d = c * c;
-                        var wi = 18.51 * d;
-                        var wa = 24.50 * d;
-                        document.getElementById('answer').innerHTML = "Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой";
 
                       }
                     </script>
 
                     <body>
-                      <h1 style="color: azure;"><br>Тооцоологч</h1>
-                      <Hr>
-                      Өндрөө оруулна уу. (см) : <input type="number" id="height" value="160"><br>
-                      Жингээ оруулна уу. (кг) : <input type="number" id="weight" value="60"><br><BR>
-                      <input type="submit" class="button button1" value="Биеийн жингийн индекс тооцоологч"
-                        onclick="bmi()">
-                      <input type="submit" class="button button1" value="Биеийн хэвийн жин тооцоологч" onclick="bmi1()">
-                      <p id="answer"></p>
-                    </body>
+                      <h1 style="color: rgb(0, 0, 0); font-size: 60px;"><br>Тооцоологч </h1><br>
+                      <div style="display: flex; margin-left: 130px; size: 1000px;" style="justify-content: center;">
+                        <div style=" block-size: 100%; "><br> 
+
+                          <div style="display: flex;">
+                            <pre style="font-size: 15px;color: #000; ">Өндрөө оруулна уу. (см) : </pre><input
+                              type="number" id="height"
+                              style="width: 200px; height: 8;border-radius: 1000px;background-color: #ffffff; opacity: 50%;font-family: Press start 2P;">
+                          </div><br>
+                          <div style="display: flex;">
+                            <pre style="font-size: 15px; color: #000;">Жингээ оруулна уу. (кг) : </pre><input
+                              type="number" id="weight"
+                              style="width: 200px; height: 10;border-radius: 1000px;background-color: #f8f8f8; opacity: 50%;">
+                          </div><br><BR>
+                          <input type="submit" class="button button1" style="border-radius: 100px;background-color: #65558F;"
+                            value="Үнэнтэй нүүр тулахад бэлэн үү?" onclick="bmi()">
+
+                        </div>
+                        <div
+                          style="font-size: 18px; width: 50%; color: #000; text-align: justify; padding-left: 100px; ">
+                          Биеийн жингийн индекс (БЖИ)
+                          Хүн бүр дахин давтагдашгүй учраас таны жин таны өндөрт л тохирсон байх ёстой. Энэ үзүүлэлт нь
+                          таныг биеийн өндөр, одоо байгаа жингээс тань хамааруулж хэвийн жинтэй юу, жингийн илүүдэлтэй
+                          юу гэдийг тодорхойлдог.
+                          БЖИ-н хувьд хэвийн жинтэй байлаа гэж бодоход хэд нь булчин, хэд нь өөх байх нь тодорхойлохгүй
+                          гэсэн үг.  </div>
+                          <div class="bottom-left">
+                            <p id="answer" style="color: #fff; padding-top: 35px; padding-left: 5px; padding-right: 5px; font-family: Press start 2P;background-color: #65558F; width: 90%; height: 275px; border-radius: 25px; justify-content: center; "></p>
+                            
+                          </div>
+
+                      
+                      </div>
+                    </body><br><br>
                   </div>
-                  <footer class="w3-container w3-teal">
-                    <p>Баярлалаа!</p>
+                  <footer class="w3-container w3-teal" style="opacity: 50%; ">
+                    <p>Эрүүл амьдралын хэв маягийг байнга хадгалах нь урт хугацаанд эрүүл байх үндэс болдог.<br>Амжилт
+                      <3 </p>
                   </footer>
                 </div>
               </div>
