@@ -4,12 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Залхуу фитнес</title>
+  <title>Залхуу фитнес
+  </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="nav.css" rel="stylesheet">
+
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="every img/gantil.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -31,7 +35,57 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <style>
+    /* Swiper Styles */
+    .swiper {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #007bff;
+    }
+
+    .contact-info h3 {
+      margin: 0;
+      font-size: 22px;
+      color: #333;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .contact-card {
+        max-width: 100%;
+      }
+    }
+  </style>
   <!-- =======================================================
   * Template Name: Selecao
   * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
@@ -43,32 +97,66 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.init-swiper', {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      }
+    });
+  });
+</script>
+
+  <header id="header" class="header d-flex align-items-center fixed-top" ; style="width: 100%;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href=" index.html" class="logo d-flex align-items-center">
+
+      <a href="index.html" class="">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h5 class="sitename">Залхуу фитнес</h5>
+        <div style="display: flex;"> <img src="every img/gantil.png" alt="hehe"
+            style="height:60px; margin-top: 0; padding-bottom: 10px; padding-left: 0px; padding-right: 10px;">
+          <h5 class="sitename" style="padding-right: 30px;">Залхуу<br> Фитнес</h5>
+        </div>
+
       </a>
 
       <nav id="navmenu" class="navmenu">
+
         <ul>
           <li><a href="index.html" class="active">Нүүр</a></li>
-          <li><a href="#about">Танилцуулга</a></li>
-          <li><a href="#services">Фитнес</a></li>
-          <li class="dropdown"><a href="news.html"><span>Мэдээлэл</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Эрүүл мэнд</a></li>
-              <li><a href="#">Сэтгэл зүй</a></li>
-              <li><a href="#">Иог, бясалгал</a></li>
-              <li><a href="#">Эрүүл хооллолт</a></li>
-            </ul>
-          </li>
-          <li><a href="#portfolio">Мерч</a></li>
-          <li><a href="#faq">Түгээмэл асуултууд</a></li>
 
-          <li><a href="#contact">Холбоо барих</a></li>
+          <li><a href="or.html">Орон дээрээ</a></li>
+
+          <li><a href="sandal.html">Сандал дээрээ</a></li>
+          <li><a href="idc.html">Хаана ч хамаагүй</a></li>
+          <button style="color: #65558F;"><i class="fa fa-calculator" onclick="openNav()"
+            style="border-radius: 50px;"></i></button>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -80,10 +168,25 @@
 
     <!-- Page Title -->
     <div class="page-title dark-background">
+      <img src="every img/cloud2.png" style=" border: none; position: absolute;
+            top: 80px;
+            right: 900px;">
+      <img src="every img/cloud.png" style=" border: none; position: absolute;
+            top: 30px;
+            left: 900px;">
+      <img src="every img/cloud3.png" style=" border: none; position: absolute;
+            top: 180px;
+            left: 800px;">
+      <img src="every img/cloud5.png" style=" border: none; position: absolute;
+            top: 20px;
+            left: 200px;">
       <div class="container position-relative">
         <h1>Сандал дээр</h1>
-        <p>Энэ хэсэгт орон дээрээ хийж болох буюу хэвтээ дасгалууд заавар болон шатаах ккал -ын хамт өгөгдөв. </p>
-      
+        <p> Эдгээр дасгалуудыг сандал дээр сууж эсвэл зогсоо байрлалаас хийнэ.</p>
+
+
+
+
       </div>
     </div><!-- End Page Title -->
 
@@ -92,183 +195,623 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>What they are saying about us</p>
+        <h2>САНДАЛ ДЭЭР</h2>
+        <p>ДАСГАЛАА ХИЙЦГЭЭЕ!!</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-3">
+        <div class="row gy-3" style="display: flex; justify-content: space-around;">
+          <!-- Timer Section 1 -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%">
+            <div class="pricing-item">
+              <h3>ХӨНДЛӨН МӨР<br> СУНГАХ №1</h3>
+              <ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai1.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Стресс, өвдөлт, ядрах шинж тэмдгийг
+                      багасгах гайхалтай дасгал юм. <br>
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Нэг гараа дээд биеийн дагуу авч, шулуун барина.<br>
+                  2. Нөгөө гараараа тохойноосоо барьж, цээж рүүгээ зөөлөн татна.<br>
+                  3. 10-20 секунд бариад нөгөө талдаа давтана.</li>
+                <h4 id="timer1" style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /10 сек</span></h4>
+              </ul>
+              <div class="btn-wrap">
+                <button onclick="resetTimer(10, 'timer1', this)" class="btn-buy" style="border: none;">Хийе!</button>
+              </div>
+            </div>
+          </div><!-- ХӨНДЛӨН МӨР СУНГАХ -->
 
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- Timer Section 2 -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" ; style="width: 30%;">
             <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h3>НИСДЭГ ТЭРЭГ </h3>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai8.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Mөрний
+                      хэсгийн өвдөлт, хөшүүн байдлыг багасгахад тусалдаг, үе мөчний цусны эргэлтийг сайжруулах төгс
+                      дасгал юм.
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;"> Заавар:<br>
+                  1. Гараа хажуу тийш нь барьж, хөлөө мөрний хэмжээтэй зайтай шулуун зогсоо.<br>
+                  2. Мөрөө урагш аажуухан эргүүлж, том тойрог хий.<br>
+                  3. Багц дуустал арагшаа хөдөлгөөнийг давтана. <br></li>
 
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <h4 id="timer2" style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /1 мин </span></h4>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <button onclick="resetTimer(60, 'timer2', this)" class="btn-buy" style="border: none;">Хийе!</button>
               </div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
 
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <!-- Timer Section 3 -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%;">
             <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
+              <h3>ХӨНДЛӨН МӨР <br> СУНГАХ №2 </h3>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
 
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai3.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Амьсгалах, зүрхний үйл ажиллагаанд үр дүнтэй
+                      байдаг.
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Баруун гараа цээжин дээрээ авч, зүүн гарын
+                  алгыг баруун гарын тохойнд аваачиж, биеэрээ улам бүр
+                  татаж, 20 секунд орчим байгаарай. <br>
+                  2. Энэ дасгалыг 1
+                  талдаа гурван удаа хийж болно. Хийж байхдаа удаан,
+                  тогтвортой амьсгал аваарай.<br></li>
+
+                <h4 id="timer3" style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /1 мин </span></h4><br>
+              </ul> 
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <button onclick="resetTimer(60, 'timer3', this)" class="btn-buy" style="border: none;">Хийе!</button>
               </div>
             </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
 
         </div>
+
+
+
+        <div class="row gy-3" style="display: flex; justify-content: space-around;">
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%">
+            <div class="pricing-item">
+              <h3>БУГУЙ СУНГАХ</h3>
+              <ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai5.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Энэ сунгалт нь зөвхөн бугуйг
+                      төдийгүй гар, хуруу, шууг сулруулдаг.
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Босоод баруун гараа мөрний өндөрт
+                  урагш сунгана.<br>
+                  2. Тохойгоо шулуун, баруун гараа зүүн
+                  гараараа барина.<br>
+                  3. Бугуйныхаа сунгалтыг мэдрэх хүртлээ
+                  бугуйгаа хойш нугална.<br>
+                  4. Бариад дараа нь бугуйгаа доош нь бөхийлгөнө.<br>
+                  5. Гараа сольж, давтана.<br></li>
+                <h4 id="timer4" style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /1 мин </span></h4>
+              </ul>
+              <div class="btn-wrap">
+                <button onclick="resetTimer(60, 'timer4', this)" class="btn-buy" style="border: none;">Хийе!</button>
+              </div>
+            </div>
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%">
+            <div class="pricing-item">
+              <h3>БУГУЙН ТОЙРОГ</h3>
+              <ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai9.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Бугуйн тойрог хийх нь бугуйгаа уян
+                      хатан, хүчтэй, ажиллагаатай байлгах гайхалтай
+                      арга бөгөөд стресс гэмтлээс урьдчилан сэргийлэхэд
+                      тусалдаг.
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Шулуун зогсоод хөлөө ташааны өргөнтэй,
+                  урагшаа харан зогсоно.<br>
+                  2. Хуруугаа сул түгжиж, гараа хавчуулж, бугуйгаа
+                  эргүүлж эхлээрэй.<br>
+                  3. Суулгаж дуустал эргэлдэж байгаарай.<br></li>
+
+                <h4 id="timer5" style="font-size: 20px; padding-top: 10px;""><sup>5</sup>ккал<span> /1 мин </span></h4>
+              </ul>
+              <div class="btn-wrap">
+                <button onclick="resetTimer(60, 'timer5', this)" class="btn-buy" style="border: none;">Хийе!</button>
+              </div>
+            </div>
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+          <!-- Timer Section 6 -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%">
+            <div class="pricing-item">
+              <h3>ДЭЭД НУРУУНЫ СУНГАЛТ</h3>
+              <ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai6.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Нурууны
+                      өвдөлтийг намдааж, гэмтлээс урьдчилан сэргийлэхэд тусална.<br>
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Хөлөө мөрний өргөнөөрөө салангид байдалтай эгц
+                  зогсоно. Эрхий хуруугаараа доош заахаар гараа хамтад нь атга.<br>
+                  2. Урагшаа гараа сунган, мөрөө бөөрөнхийл.<br>
+                  3. Суналтыг 10-20 секунд барина.</li>
+                <h4 id="timer6" style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /1 мин </span></h4>
+              </ul>
+              <div class="btn-wrap">
+                <button onclick="resetTimer(60, 'timer6', this)" class="btn-buy" style="border: none;">Хийе!</button>
+              </div>
+            </div>
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+          <!-- Timer Section 8 -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%">
+            <div class="pricing-item">
+              <h3>ХҮЗҮҮ СУНГАХ</h3>
+              <ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai1.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Уян хатан
+                      байдлыг нэмэгдүүлж, хөдөлгөөний хүрээг сайжруулж, булчингийн
+                      өвдөлтийг бууруулдаг.<br>
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Шулуун зогсоод хөлөө ташааны өргөнөөр зайлуулж,
+                  толгойгоо мөр рүү хазайлгана.<br>
+                  2. Гараа толгой дээрээ тавиад хүзүүндээ суналтыг
+                  мэдрэх хүртэл зөөлөн татна.<br>
+                  3. 10-15 секунд бариад нөгөө талдаа давтана.</li>
+                <h4 id="timer8" style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /1 мин </span></h4>
+              </ul>
+              <div class="btn-wrap">
+                <button onclick="resetTimer(60, 'timer8', this)" class="btn-buy" style="border: none;">Хийе!</button>
+              </div>
+            </div>
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+
+          <!-- Timer Section 9 -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="width: 30%">
+            <div class="pricing-item">
+              <h3>ГАР САВЛУУР</h3>
+              <ul>
+                <div class="grid">
+                  <div class="img-wrapper">
+                    <img class="blur" style="width: 200px; height: 200px;" src="every img/sandal/sandaltai1.gif" alt=""
+                      width="100%">
+                    <div class="content fade" style="text-align: justify;">Зүрхийг ихээр дэмжиж,
+                      уян хатан байдлыг нэмэгдүүлдэг.<br>
+                    </div>
+                  </div>
+                </div>
+                <li style="text-align: left;">Заавар:<br>
+                  1. Өвдгөө бага зэрэг нугалж, хөлөө мөрний өргөнийг салгаж,
+                  гараа хажуу тийш нь хөндлөн сунган эгцлэн зогсоно.<br>
+                  2. Урд талын гараа гаталж, дараа нь аль болох хурдан буцааж авчирна.<br>
+                  3. Энэ хөдөлгөөнийг секунд дуустал нь давтана.</li>
+                <h4 id="timer9 " style="font-size: 20px; padding-top: 10px;"><sup>5</sup>ккал<span> /1 мин </span></h4>
+              </ul>
+              <div class="btn-wrap">
+                <button onclick="resetTimer(60, 'timer9', this)" class="btn-buy" style="border: none;">Хийе!</button>
+              </div>
+            </div>
+          </div><!-- САЛХИНЫ ШИЛ АРЧИГЧ -->
+        </div>
+
+        <script>
+          function resetTimer(initialTime, elementId, button) {
+            var element = document.getElementById(elementId);
+            var time = initialTime;
+
+            // Reset the button text and color
+            button.innerHTML = "Хийе!";
+            button.style.backgroundColor = "#65558F"; // Reset to default color
+
+            // Clear any existing timer
+            if (window.timerInterval) clearInterval(window.timerInterval);
+
+            // Start a new timer
+            window.timerInterval = setInterval(function () {
+              element.innerHTML = time + " sec";
+              time--;
+
+              if (time < 0) {
+                clearInterval(window.timerInterval);
+                element.innerHTML = "Нэг хумс саримс шатаачихлаа шүү дээ, гал гал бро";
+                button.innerHTML = "Хийсэн! Дахъя";
+                button.style.backgroundColor = "#2a2c39"; // Change the background color
+
+              }
+            }, 1000);
+          }
+        </script>
 
       </div>
 
     </section>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Selecao</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+    <section>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div id="bgimg">
+              <div class="w3-container">
+  
+                <div id="id01" class="w3-modal">
+                  <div class="w3-modal-content w3-animate-top w3-card-4">
+  
+                    <div class="w3-container" style="color: rgb(12, 12, 12);">
+                      <script>
+                        function bmi() {
+                          var h = parseFloat(document.getElementById('height').value);
+                          var w = parseFloat(document.getElementById('weight').value);
+                          var c = h / 100;
+                          var d = c * c;
+                          var ans = w / d;
+                          var wi = 18.51 * d;
+                          var wa = 24.50 * d;
+                          if (0 < ans && ans <= 18.50) {
+                            document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг туранхай байгааг харуулж байна!.<br>Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илчлэгихтэй хоол хүнс хэрэглэж, илчлэг их зарцуулдаг кардио дасгалыг хэт их хийхээс зайлсхийж, булчингийн  масс нэмэхэд илүү анхаараарай.";
+                          }
+  
+                          else if (18.51 <= ans && ans <= 24.90) {
+                            document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Биеийн жин хэвийн байгаа тул жингээ хадгалж шим тэжээлтэй хоол хүнсийг тэнцвэртэйгээр хэрэглэж авах ёстой илчлэгээ  авч тогтмол дасгал хөдөлгөөн хийж эрүүл зөв амьдралыг бүтээгээрэй.Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой.";
+                          }
+  
+                          else if (24.91 <= ans && ans <= 29.90) {
+                            document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг жингийн илүүдэлтэй байгааг харуулж байна!. Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй тэнцвэртэйгээр бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн  дасгал хөдөлгөөн хийхэд илүү анхаараарай.";
+                          }
+  
+                          else if (29.91 <= ans && ans <= 34.90) {
+                            document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг I зэргийн таргалалттай байгааг харуулж байна!. Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй тэнцвэртэйгээр бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн  дасгал хөдөлгөөн тогтмол хийхэд илүү анхаараарай.";
+                          }
+  
+                          else if (34.91 <= ans && ans <= 39.90) {
+                            document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг II зэргийн таргалалттай байгааг харуулж байна!!!. Та удаан амьдармааргүй байна уу? Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !! Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй тэнцвэртэйгээр бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн  дасгал хөдөлгөөн байнга хийхэд маш их анхаараарай.";
+                          }
+  
+                          else if (39.91 <= ans) {
+                            document.getElementById('answer').innerHTML = "Таны биеийн жингийн индекс " + ans.toFixed(2) + " байна. Энэ нь таныг III зэргийн таргалалттай байгааг харуулж байна!!!. Та удаан амьдрахыг хүсэхгүй байна гэж үү? Та яг одооноос жингээ хасаж эхлэх хэрэгтэй !! Таны жин " + wi.toFixed(2) + "-ээс " + wa.toFixed(2) + " килограмм байвал тохиромжтой. Тиймд та илүү калори авалгүй давтамжтайгаар бага хооллож өдөр тутмын хөдөлгөөнийг нэмэгдүүлэн дасгал хөдөлгөөн байнга хийж амьдралын хэв маягаа зөв болгоход илүү анхаараарай.";
+                          }
+  
+  
+                        }
+                      </script>
+  
+                      <body>
+                        <h1 style="color: rgb(0, 0, 0); font-size: 60px;"><br>Тооцоологч </h1><br>
+                        <div style="display: flex; margin-left: 130px; size: 1000px;" style="justify-content: center;">
+                          <div style=" block-size: 100%; "><br> 
+  
+                            <div style="display: flex;">
+                              <pre style="font-size: 15px;color: #000; ">Өндрөө оруулна уу. (см) : </pre><input
+                                type="number" id="height"
+                                style="width: 200px; height: 8;border-radius: 1000px;background-color: #ffffff; opacity: 50%;font-family: Press start 2P;">
+                            </div><br>
+                            <div style="display: flex;">
+                              <pre style="font-size: 15px; color: #000;">Жингээ оруулна уу. (кг) : </pre><input
+                                type="number" id="weight"
+                                style="width: 200px; height: 10;border-radius: 1000px;background-color: #f8f8f8; opacity: 50%;">
+                            </div><br><BR>
+                            <input type="submit" class="button button1" style="border-radius: 100px;background-color: #65558F;"
+                              value="Үнэнтэй нүүр тулахад бэлэн үү?" onclick="bmi()">
+  
+                          </div>
+                          <div
+                            style="font-size: 18px; width: 50%; color: #000; text-align: justify; padding-left: 100px; ">
+                            Биеийн жингийн индекс (БЖИ)
+                            Хүн бүр дахин давтагдашгүй учраас таны жин таны өндөрт л тохирсон байх ёстой. Энэ үзүүлэлт нь
+                            таныг биеийн өндөр, одоо байгаа жингээс тань хамааруулж хэвийн жинтэй юу, жингийн илүүдэлтэй
+                            юу гэдийг тодорхойлдог.
+                            БЖИ-н хувьд хэвийн жинтэй байлаа гэж бодоход хэд нь булчин, хэд нь өөх байх нь тодорхойлохгүй
+                            гэсэн үг.  </div>
+                            <div  style=" position: absolute;
+                            bottom: 13%;
+                            left: 57%;">
+                              <p id="answer" style="color: #fff; padding-top: 35px; padding-left: 5px; padding-right: 5px; font-family: Press start 2P;background-color: #65558F; width: 90%; height: 275px; border-radius: 25px; justify-content: center; "></p>
+                              
+                            </div>
+  
+                        
+                        </div>
+                      </body><br><br>
+                    </div>
+                    <footer class="w3-container w3-teal" style="opacity: 50%; ">
+                      <p>Эрүүл амьдралын хэв маягийг байнга хадгалах нь урт хугацаанд эрүүл байх үндэс болдог.<br>Амжилт
+                        <3 </p>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
       </div>
+  
+  
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "block";
+        }
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+  
+  
+      </script><!-- End Tab Content Item -->
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Санал болгох</h2>
+        <p>Бие бялдар хөгжүүлэх төвүүд</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Ari Spinning</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d969150de362d27%3A0x12003c5e69398514!2sAri%20SPINNING!5e0!3m2!1sen!2smn!4v1722689325384!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 1 -->
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Fit Nest</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96910b57b0e10f%3A0x84f4d578993fa6b8!2sFIT%20NEST%20calisthenics%20sport%20club!5e0!3m2!1sen!2smn!4v1722689226119!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 2 -->
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>King Fitness</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d969367cdd71855%3A0x422f9b4ce19840d0!2sKing%20Fitness!5e0!3m2!1sen!2smn!4v1722689786404!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+            </div><!-- End Slide 3 -->
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Gold's Gym</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96922a376aac73%3A0x77624a376ddadbea!2sGold&#39;s%20Gym!5e0!3m2!1sen!2smn!4v1722690347758!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 4 -->
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Goku Gym</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d969313f90bcba7%3A0xa7f9b1758441d0ca!2sGOKU%20GYM!5e0!3m2!1sen!2smn!4v1722690398825!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 5 -->
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Fit's Avenue</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693c203cba489%3A0x6b0297c49a8d1380!2sFit&#39;s%20avenue!5e0!3m2!1sen!2smn!4v1722690478592!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 6 -->
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Goku Gym 3</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9691578e3785d7%3A0x8cf7a3439688ee99!2sGOKUGYM3!5e0!3m2!1sen!2smn!4v1722690507858!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 7 -->
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Avengers Fitness</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9691e7e0c1fc69%3A0xd38dc4173fe4da17!2sAvengers%20fitness!5e0!3m2!1sen!2smn!4v1722690553842!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 8 -->
+            <!-- Slide 9 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>Naadam Club</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42795.3977279348!2d106.83639634863277!3d47.90325239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693b5005cea3d%3A0x50aa92b632f522c5!2sNAADAM%20CLUB!5e0!3m2!1sen!2smn!4v1722690588227!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div><!-- End Slide 9 -->
+            <!-- Slide 10 -->
+            <div class="swiper-slide">
+              <div class="contact-card">
+                <div class="contact-info">
+                  <i class="fas fa-dumbbell"></i>
+                  <div>
+                    <h3>King Fitness</h3>
+                  </div>
+
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42783.54938107958!2d106.89626454863281!3d47.91758240000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d969367cdd71855%3A0x422f9b4ce19840d0!2sKing%20Fitness!5e0!3m2!1sen!2smn!4v1722689786404!5m2!1sen!2smn"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+            </div><!-- End Slide 10 -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    
+
+    <footer id="footer" class="footer dark-background" style="background-color: rgba(42, 44, 57, 0.9);">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Selecao</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename" style="font-size: 50px;">Талархал<br></h3>
+        <p style="font-size: 25px;"><br>Бидэнд суралцах боломжийг олгосон ивээн тэтгэгч байгууллагууддаа баярлалаа. </p>
+        <div class="social-links d-flex justify-content-center" style="height: 150px;">
+          <img src="every img/sponsor.png">
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span> <strong class="px-1 sitename">Тэсвэртэй товчлуурууд</strong> <span>Бүх эрх хуулиар
+              хамгаалагдсан.</span>
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
